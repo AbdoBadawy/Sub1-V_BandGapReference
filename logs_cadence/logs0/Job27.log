@@ -1,0 +1,109 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = BandGapReference
+	Cell         = BGR_test
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = BandGapReference:BGR_test:1_none_Interactive.117
+	Results DB   = /home/cadence/tsmc65nm/BandGapReference/BGR_test/adexl/results/data/Interactive.117.rdb
+	Results Dir  = /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data/Interactive.117/1/BandGapReference:BGR_test:1
+	Results Loc  = /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data
+	Project Dir  = /home/cadence/simulation
+	Setup DB loc = /home/cadence/tsmc65nm/BandGapReference/BGR_test/adexl
+	File Encoding = 0
+
+
+*Info*    Spectre controlMode is set "batch".
+
+
+
+
+
+
+*Info*    Run start for Point ID (14 1) on testbench [
+          BandGapReference:BGR_test:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var IB = "0.5u"
+Setting var IREF = "0.5u"
+Setting var L = "580n"
+Setting var L_input = "280n"
+Setting var M = "40"
+Setting var M_input = "10"
+Setting var RCTAT = "1.028M"
+Setting var RPTAT = "166k"
+Setting var RREF = "675k"
+Setting var VDS = "2.5"
+Setting var VGS = "553m"
+Setting var VSB = "0"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data/Interactive.117/1/BandGapReference:BGR_test:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data/Interactive.117/1/BandGapReference:BGR_test:1
+
+
+*Info*    Creating Netlist for Point ID (14 1)
+
+generate netlist...
+Begin Incremental Netlisting Oct  7 15:30:35 2024
+WARNING (OSSHNL-160): The primitive, 'analogLib/vsource/spectre', was not used in the last netlisting session in this
+current run directory. Therefore, re-netlisting all cell views where this
+primitive is instantiated.
+
+WARNING (OSSHNL-195): The value of the property "nlAction" on instance 'V0' in cell 'BGR_test', view
+'schematic', has changed since the last netlisting session in the current run
+directory. Some cell views will be re-netlisted.
+
+End netlisting Oct  7 15:30:36 2024
+
+Netlisting Statistics:
+	Number of components:   28
+
+	Elapsed time:          1.0s (28.00/s)
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          BandGapReference:BGR_test:1 ] for Point ID (14 1).
+
+Delete psf data in /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data/Interactive.117/1/BandGapReference:BGR_test:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+
+*Info*    Run complete for Point ID (14 1) on testbench [
+          BandGapReference:BGR_test:1 ].
+
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.

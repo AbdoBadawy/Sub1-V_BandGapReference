@@ -1,0 +1,110 @@
+*Info*    Exporting services from client ... 
+
+*Info*    Client has finished starting ... 
+
+
+
+*Info*    Configuring the session ...
+
+	Library      = BandGapReference
+	Cell         = BGR_test
+	View         = schematic
+	Simulator    = spectre
+	State Path   = $AXL_SETUPDB_DIR/test_states
+	State Name   = BandGapReference:BGR_test:1_none_Interactive.57
+	Results DB   = /home/cadence/tsmc65nm/BandGapReference/BGR_test/adexl/results/data/Interactive.57.rdb
+	Results Dir  = /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data/Interactive.57/1/BandGapReference:BGR_test:1
+	Results Loc  = /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data
+	Project Dir  = /home/cadence/simulation
+	Setup DB loc = /home/cadence/tsmc65nm/BandGapReference/BGR_test/adexl
+	File Encoding = 0
+
+
+*Info*    Spectre controlMode is set "batch".
+
+
+
+
+
+
+*Info*    Run start for Point ID (23 1) on testbench [
+          BandGapReference:BGR_test:1 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting var IB = "0.5u"
+Setting var IREF = "0.5u"
+Setting var L = "580n"
+Setting var L_input = "280n"
+Setting var M = "40"
+Setting var M_input = "10"
+Setting var RCTAT = "1.059M"
+Setting var RPTAT = "166k"
+Setting var RREF = "689.58k"
+Setting var VDS = "2.5"
+Setting var VGS = "553m"
+Setting var VSB = "0"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data/Interactive.57/1/BandGapReference:BGR_test:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data/Interactive.57/1/BandGapReference:BGR_test:1
+
+
+*Info*    Creating Netlist for Point ID (23 1)
+
+generate netlist...
+Begin Incremental Netlisting Sep 11 18:16:09 2024
+End netlisting Sep 11 18:16:09 2024
+
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+      ...successful.
+compose simulator input file...
+      ...successful.
+
+*Info*    Running simulation on testbench [
+          BandGapReference:BGR_test:1 ] for Point ID (23 1).
+
+Delete psf data in /home/cadence/simulation/BandGapReference/BGR_test/adexl/results/data/Interactive.57/1/BandGapReference:BGR_test:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+
+*Error*   Error ID  = 5011
+*Error*   Error Msg = Simulator failed to complete the simulation.
+
+          The simulator integration (OASIS) has reported an
+          unsuccessful simulation.
+While this validity check is
+          dependent on the particular simulator's OASIS
+          integration,
+with the default Cadence-provided checks
+          common causes for this failure are:
+1. Missing simulation
+          /psf directory containing simulation output files.
+2.
+          Simulation output files (e.g., PSF) that do not contain any
+          successful analyses.
+Check the simulator's output log for
+          more information.
+./runSimulation can be manually run in
+          this directory to check the issue.
+
+
+
+
+Simulation design variables differ from those on the cellView,
+they have been saved in the file "/tmp/saved-design-variables".
+To save future changes, copy variables to cellView before exiting.

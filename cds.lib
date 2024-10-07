@@ -1,0 +1,18 @@
+# File Created by cadence,,, at Thu Feb  1 06:47:31 2024
+# assisted by CdsLibEditor
+SOFTINCLUDE /usr/local/cadence/IC617/share/cdssetup/dfII/cds.lib
+SOFTINCLUDE /usr/local/cadence/IC617/share/cdssetup/hdl/cds.lib
+SOFTINCLUDE /usr/local/cadence/IC617/share/cdssetup/pic/cds.lib
+SOFTINCLUDE /usr/local/cadence/IC617/share/cdssetup/sg/cds.lib
+DEFINE tsmcN65 ./tsmcN65
+DEFINE MentorObserverLib $MGC_HOME/shared/pkgs/icv/tools/realtime/virtuoso/MentorObserverLib
+DEFINE RF_Session /home/cadence/tsmc65nm/RF_Session
+DEFINE BGR /home/cadence/tsmc65nm/BGR
+DEFINE inverter /home/cadence/tsmc65nm/inverter
+DEFINE inverter_2 /home/cadence/tsmc65nm/inverter_2
+DEFINE Test_2 /home/cadence/tsmc65nm/Test_2
+DEFINE diff_amp /home/cadence/tsmc65nm/diff_amp
+DEFINE cadence_training /home/cadence/tsmc65nm/cadence_training
+DEFINE umc90nm /home/cadence/umc90nm/umc90nm
+DEFINE assignment_analog /home/cadence/tsmc65nm/assignment_analog
+DEFINE BandGapReference /home/cadence/tsmc65nm/BandGapReference
